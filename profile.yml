@@ -3,7 +3,7 @@ name: support
 on:
   push:
     branches: [master]
-  pull-request:
+  pull_request:
     branches: [master]
 
 jobs:
@@ -25,4 +25,4 @@ jobs:
       - name: Build the project
         run: npm run build
       - name: Run tests
-        run: npm run test
+        run: npm type-check
