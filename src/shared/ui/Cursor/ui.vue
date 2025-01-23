@@ -48,5 +48,6 @@ onBeforeUnmount(() => {
   border: 1px solid var(--main-white);
   border-radius: 50%;
   transition: width 0.1s;
+  
 }
 </style>
