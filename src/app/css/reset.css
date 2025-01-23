@@ -139,8 +139,9 @@ body {
   background: var(--main-black);
   color: var(--main-white);
   min-width: 360px;
-
   font-size: 10px;
+  position: relative;
+  cursor: none;
 }
 
 .link {

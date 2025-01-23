@@ -44,11 +44,8 @@ const cv: string = "";
   display: flex;
   gap: 2rem;
 }
-.header__copy {
-}
 .header__socials {
   display: flex;
   gap: 0.5rem;
 }
-
 </style>
