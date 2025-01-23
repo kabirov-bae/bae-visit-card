@@ -1,5 +1,6 @@
 <template>
   <component :is="props.tagName" :class="['heading', bold ? 'bold' : '']">
+    <slot></slot>
   </component>
 </template>
 

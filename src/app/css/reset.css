@@ -135,7 +135,29 @@ legend {
 }
 
 body {
-  background: #0c0c0c;
-  color: #fffff0;
+  font-family: "TT Norms Pro";
+  background: var(--main-black);
+  color: var(--main-white);
   min-width: 360px;
+
+  font-size: 10px;
+}
+
+.link {
+  position: relative;
+}
+
+.link::after {
+  position: absolute;
+  content: "";
+  top: 102%;
+  left: -1%;
+  width: 0%;
+  height: 1px;
+  background-color: var(--main-white);
+  transition: 0.2s;
+}
+
+.link:hover::after {
+  width: 102%;
 }
