@@ -3,7 +3,8 @@ import { Container } from "@/shared/ui/Container";
 import { Icons } from "@/shared/ui/Icons";
 
 const email: string = "talkingtom32203@mail.ru";
-const cv: string = "";
+const cv: string =
+  "https://drive.google.com/file/d/17nQ7C9krw3P-dCUJOFxtWS4kqn9WMmPb/view?usp=sharing";
 </script>
 
 <template>
@@ -11,14 +12,16 @@ const cv: string = "";
     <Container>
       <div class="header__inner">
         <div class="header__links">
-          <a class="link" :href="'mailto:' + email">{{ email }}</a>
-          <a class="link" :href="cv">cv</a>
+          <a class="link" target="_blank" :href="'mailto:' + email">{{
+            email
+          }}</a>
+          <a class="link" target="_blank" :href="cv">cv</a>
         </div>
         <div class="header__socials">
-          <Icons v-bind="$attrs" class="header__icon" type="github" />
-          <Icons v-bind="$attrs" class="header__icon" type="vk" />
-          <Icons v-bind="$attrs" class="header__icon" type="telegram" />
-          <Icons v-bind="$attrs" class="header__icon" type="instagram" />
+          <Icons type="github" />
+          <Icons type="vk" />
+          <Icons type="telegram" />
+          <Icons type="instagram" />
         </div>
       </div>
     </Container>
