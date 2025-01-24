@@ -1,16 +1,13 @@
 <template>
-  <Cursor />
   <Header />
-  <main></main>
+  <Content />
   <Footer />
 </template>
 
 <script lang="ts" setup>
-import { Cursor } from "@/shared/ui/Cursor";
+import { Content } from "@/shared/ui/Content";
 import { Header } from "@/widgets/Header";
 import { Footer } from "@/widgets/Footer";
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
