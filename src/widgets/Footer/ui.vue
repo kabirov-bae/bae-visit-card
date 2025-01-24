@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Container } from "@/shared/ui/Container";
-import { Icons } from "@/shared/ui/Icons";
 </script>
 
 <template>
@@ -9,12 +8,6 @@ import { Icons } from "@/shared/ui/Icons";
       <div class="footer__inner">
         <div class="footer__copyright">
           &copy;&nbsp;2025 All rights reserved.
-        </div>
-        <div class="footer__socials">
-          <Icons type="github" />
-          <Icons type="vk" />
-          <Icons type="telegram" />
-          <Icons type="instagram" />
         </div>
       </div>
     </Container>
@@ -30,11 +23,11 @@ import { Icons } from "@/shared/ui/Icons";
 }
 .footer__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .footer__copyright {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 .footer__socials {
   display: flex;
