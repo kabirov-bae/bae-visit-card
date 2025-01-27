@@ -1,5 +1,21 @@
+<script setup lang="ts">
+interface IAvatar {
+  scale: boolean;
+  bg: boolean;
+}
+
+const avatar: IAvatar = {
+  scale: true,
+  bg: true,
+};
+
+const { scale, bg } = avatar;
+</script>
+
 <template>
-  <div class="avatar">
+  <div
+    :class="['avatar', scale ? `avatar--scale` : '', bg ? `avatar--bg` : '']"
+  >
     <img src="/img/bae-1.png" alt="" />
   </div>
 </template>
@@ -14,10 +30,15 @@
 }
 
 .avatar img {
+  transition: 0.2s;
   filter: brightness(1.5) contrast(0.9);
 }
 
-.avatar:hover {
+.avatar--bg:hover {
   background: var(--main-white);
+}
+
+.avatar--scale:hover img {
+  scale: 1.2;
 }
 </style>
