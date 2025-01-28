@@ -1,15 +1,18 @@
 <script setup lang="ts">
+import { defineProps } from "vue";
+
 interface IAvatar {
   scale: boolean;
   bg: boolean;
 }
+interface IAvatarProps {
+  scale?: boolean;
+  bg?: boolean;
+}
 
-const avatar: IAvatar = {
-  scale: true,
-  bg: true,
-};
+const props = defineProps<IAvatarProps>();
 
-const { scale, bg } = avatar;
+const { scale = true, bg = false } = props;
 </script>
 
 <template>
