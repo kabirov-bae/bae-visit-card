@@ -2,6 +2,7 @@
   <Header />
   <Content>
     <Intro />
+    <Work />
   </Content>
   <Footer />
 </template>
@@ -10,6 +11,7 @@
 import { Content } from "@/shared/ui/Content";
 import { Header } from "@/widgets/Header";
 import { Intro } from "@/widgets/Intro";
+import { Work } from "@/widgets/Work";
 import { Footer } from "@/widgets/Footer";
 </script>
 
