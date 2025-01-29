@@ -25,7 +25,7 @@ const { scale = true, bg = false } = props;
 
 <style scoped>
 .avatar {
-  max-width: 20rem;
+  max-width: 10rem;
   border: 0.3rem solid var(--main-white);
   border-radius: 50%;
   overflow: hidden;
@@ -33,8 +33,9 @@ const { scale = true, bg = false } = props;
 }
 
 .avatar img {
-  transition: 0.2s;
+  transition: 0.5s;
   filter: brightness(1.5) contrast(0.9);
+  object-position: -10% -10%;
 }
 
 .avatar--bg:hover {
@@ -42,6 +43,6 @@ const { scale = true, bg = false } = props;
 }
 
 .avatar--scale:hover img {
-  scale: 1.2;
+  scale: 1.1;
 }
 </style>

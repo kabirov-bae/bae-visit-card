@@ -23,9 +23,8 @@ import { Container } from "@/shared/ui/Container";
 
 .intro__inner {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
+  justify-content: center;
+  align-items: end;
   gap: 2rem;
 }
 
