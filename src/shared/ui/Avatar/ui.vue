@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
 
-interface IAvatar {
-  scale: boolean;
-  bg: boolean;
-}
 interface IAvatarProps {
   scale?: boolean;
   bg?: boolean;
