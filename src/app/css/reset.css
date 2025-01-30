@@ -181,3 +181,7 @@ main {
 .link:hover::after {
   width: 102%;
 }
+
+.with-divider {
+  border-bottom: 1px solid rgb(236, 219, 186, 0.1);
+}

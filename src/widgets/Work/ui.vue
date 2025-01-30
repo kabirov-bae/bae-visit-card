@@ -6,6 +6,7 @@
         <div class="works__item"></div>
       </div>
     </Container>
+    <Divider />
   </section>
 </template>
 
