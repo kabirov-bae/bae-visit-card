@@ -5,7 +5,7 @@
         >Portfolio</Heading
       >
       <div class="portfolio__inner">
-        <PortfolioItem v-for="Card in Cards" :key="Card.name" ></PortfolioItem>
+        <PortfolioItem v-for="Card in Cards" :key="Card.name"></PortfolioItem>
       </div>
     </Container>
   </section>
@@ -16,7 +16,6 @@ import { Cards } from "@/entities/portfolio/model/store";
 import { Container } from "@/shared/ui/Container";
 import { Heading } from "@/shared/ui/Heading";
 import { PortfolioItem } from "@/shared/ui/PortfolioItem";
-import vueImg from "@/shared/ui/Assets/Images/vue.png";
 
 console.log(Cards);
 </script>
