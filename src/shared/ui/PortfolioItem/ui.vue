@@ -1,29 +1,18 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
 import { Heading } from "@/shared/ui/Heading";
-interface CardProps {
-  name: string;
-  image: string;
-  stack: string[];
-}
-
-const props = defineProps<CardProps>();
-
-const { name, image, stack } = props;
 </script>
 
 <template>
   <div class="portfolio-item">
     <div class="portfolio-item__image">
-      <img :src="img" alt="" />
+      <slot></slot>
     </div>
     <div class="portfolio-item__name">
-      <Heading tag-name="h3">{{ name }}</Heading>
+      <Heading tag-name="h3"></Heading>
     </div>
     <div class="portfolio-item__stack">
-      <slot>
-        <span v-for="stackItem in stack" :key="stackItem">{{ stackItem }}</span>
-      </slot>
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -31,12 +20,19 @@ const { name, image, stack } = props;
 <style scoped>
 .portfolio-item {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid var(--main-white);
+  border-radius: 1.3rem;
 }
 
 .portfolio-item__image {
   width: 100%;
-  height: 3rem;
+  aspect-ratio: 16 / 9;
   background: var(--main-white);
+  opacity: 0.5;
+  border-radius: 0.6rem;
 }
 
 .portfolio-item__name {
