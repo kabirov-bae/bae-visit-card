@@ -6,16 +6,23 @@
       >
       <div class="portfolio__inner">
         <PortfolioItem v-for="Card in Cards" :key="Card.name">
+          <!-- Image -->
           <template v-slot:image>
             <img :src="Card.image" :alt="Card.name" />
           </template>
+          <!-- Title -->
           <template v-slot:title>
-            <Heading tag-name="h3">{{ Card.name }}</Heading>
+            {{ Card.name }}
           </template>
+          <!-- Description -->
+          <template v-slot:descr>
+            {{ Card.descr }}
+          </template>
+          <!-- Stack -->
           <template v-slot:stack>
-            <ul>
-              <li v-for="stack in Card.stack" :key="stack">{{ stack }}</li>
-            </ul>
+            <li v-for="stack in Card.stack" :key="stack" class="stack-element">
+              {{ stack }}
+            </li>
           </template>
         </PortfolioItem>
       </div>
@@ -44,5 +51,13 @@ console.log(Cards);
   grid-template-columns: repeat(3, 30rem);
   justify-content: center;
   column-gap: 1.5rem;
+}
+
+.stack-element {
+  padding: 0.3rem 1rem;
+  background: var(--main-white);
+  border-radius: 0.6rem;
+  color: var(--main-black);
+  text-transform: lowercase;
 }
 </style>

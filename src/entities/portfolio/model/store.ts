@@ -7,16 +7,22 @@ export const Cards: CardProps[] = [
   {
     name: "Exemple v1",
     image: picF,
-    stack: ["ex", "323", "vue"],
+    descr:
+      "lorem ipsum dolor sit amet, consectetur adip nonum soc tempor invidunt ut labore et dolore magna aliqu sapien et dolore magna aliqu sapien et dolore magna aliqu",
+    stack: ["react"],
   },
   {
     name: "Exemple v2",
     image: picS,
-    stack: ["ex", "323", "vue"],
+    descr:
+      "lorem ipsum dolor sit amet, consectetur adip nonum soc tempor invidunt ut labore et dolore magna aliqu sapien et dolore magna aliqu sapien et dolore magna aliqu",
+    stack: ["vue"],
   },
   {
     name: "Exemple v3",
     image: picT,
-    stack: ["ex", "323", "vue"],
+    descr:
+      "lorem ipsum dolor sit amet, consectetur adip nonum soc tempor invidunt ut labore et dolore magna aliqu sapien et dolore magna aliqu sapien et dolore magna aliqu",
+    stack: ['php', 'Gulp.js'],
   },
 ];
