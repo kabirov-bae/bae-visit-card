@@ -1,14 +1,25 @@
 <script setup lang="ts">
+import { onMounted, ref } from "vue";
 import { Container } from "@/shared/ui/Container";
 import { Icons } from "@/shared/ui/Icons";
 
 const email: string = "talkingtom32203@mail.ru";
 const cv: string =
   "https://drive.google.com/file/d/17nQ7C9krw3P-dCUJOFxtWS4kqn9WMmPb/view?usp=sharing";
+
+const isLoaded = ref(false);
+onMounted(() => {
+  setTimeout(() => {
+    isLoaded.value = true;
+    console.log(isLoaded.value);
+  }, 4000);
+});
+
+console.log(isLoaded);
 </script>
 
 <template>
-  <header class="header" id="header">
+  <header v-if="isLoaded" class="header" :class="{ 'fade-in': isLoaded }" id="header">
     <Container>
       <div class="header__inner">
         <div class="header__links">
@@ -31,6 +42,15 @@ const cv: string =
 <style>
 .header {
   padding: 3rem 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
 }
 .header * {
   text-transform: lowercase;

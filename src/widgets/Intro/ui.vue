@@ -24,8 +24,9 @@ import { Container } from "@/shared/ui/Container";
 .intro__inner {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   gap: 2rem;
+  height: 100vh;
 }
 
 .intro__text {
