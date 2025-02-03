@@ -6,13 +6,13 @@ import { Heading } from "@/shared/ui/Heading";
 <template>
   <div class="portfolio-item">
     <div class="portfolio-item__image">
-      <slot></slot>
+      <slot name="image"></slot>
     </div>
     <div class="portfolio-item__name">
-      <Heading tag-name="h3"></Heading>
+      <slot name="title"></slot>
     </div>
     <div class="portfolio-item__stack">
-      <slot></slot>
+      <slot name="stack"></slot>
     </div>
   </div>
 </template>

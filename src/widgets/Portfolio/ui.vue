@@ -5,7 +5,19 @@
         >Portfolio</Heading
       >
       <div class="portfolio__inner">
-        <PortfolioItem v-for="Card in Cards" :key="Card.name"></PortfolioItem>
+        <PortfolioItem v-for="Card in Cards" :key="Card.name">
+          <template v-slot:image>
+            <img :src="Card.image" :alt="Card.name" />
+          </template>
+          <template v-slot:title>
+            <Heading tag-name="h3">{{ Card.name }}</Heading>
+          </template>
+          <template v-slot:stack>
+            <ul>
+              <li v-for="stack in Card.stack" :key="stack">{{ stack }}</li>
+            </ul>
+          </template>
+        </PortfolioItem>
       </div>
     </Container>
   </section>
