@@ -6,7 +6,7 @@ import { Heading } from "@/shared/ui/Heading";
 <template>
   <section class="skill" id="skill">
     <Container>
-      <Heading tag-name="h2" class="title">Skills</Heading>
+      <Heading tag-name="h2" bold class="title">Skills</Heading>
       <div class="skill__inner"></div>
     </Container>
   </section>

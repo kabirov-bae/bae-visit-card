@@ -1,9 +1,10 @@
 <template>
   <Header />
   <Content>
-    <Intro class="with-divider"/>
+    <Intro class="with-divider" />
     <Work class="with-divider" />
     <Portfolio class="with-divider" />
+    <Skill class="with-divider" />
   </Content>
   <Footer />
 </template>
@@ -15,6 +16,7 @@ import { Intro } from "@/widgets/Intro";
 import { Work } from "@/widgets/Work";
 import { Portfolio } from "@/widgets/Portfolio";
 import { Footer } from "@/widgets/Footer";
+import { Skill } from "@/widgets/Skills";
 </script>
 
 <style scoped></style>
