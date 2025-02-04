@@ -1,7 +1,7 @@
 <template>
   <Header />
   <Content>
-    <Intro />
+    <Intro class="with-divider"/>
     <Work class="with-divider" />
     <Portfolio class="with-divider" />
   </Content>
