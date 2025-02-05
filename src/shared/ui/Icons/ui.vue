@@ -1,17 +1,23 @@
 import { Icons } from '@/shared/ui/Icons';
 <script setup lang="ts">
 interface Props {
-  type: "github" | "vk" | "telegram" | "instagram";
+  type:
+    | "github"
+    | "vk"
+    | "telegram"
+    | "instagram"
+    | "vue"
+    | "react"
+    | "php"
+    | "css"
+    | "js";
 }
 const props = defineProps<Props>();
 
 const { type } = props;
 
 interface Me {
-  telegram: string;
-  instagram: string;
-  vk: string;
-  github: string;
+  [key: string]: string;
 }
 
 const me: Me = {
