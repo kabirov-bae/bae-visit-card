@@ -28,6 +28,7 @@ import { Heading } from "@/shared/ui/Heading";
 <style scoped>
 .works {
 }
+
 .works__text {
   display: flex;
   flex-direction: column;

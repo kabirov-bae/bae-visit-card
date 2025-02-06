@@ -41,9 +41,7 @@ import { PortfolioItem } from "@/shared/ui/PortfolioItem";
 .portfolio {
   padding: 1rem 0;
 }
-.portfolio__title {
-  margin-bottom: 2rem;
-}
+
 .portfolio__inner {
   display: grid;
   grid-template-columns: repeat(3, 30rem);

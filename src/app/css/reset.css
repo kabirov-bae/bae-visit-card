@@ -1,4 +1,19 @@
 /* Reset and base styles  */
+::-webkit-scrollbar-track {
+  padding: 2px;
+  background-color: var(--main-black);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: var(--main-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-white);
+  border-radius: 5px;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -134,6 +149,12 @@ legend {
   cursor: not-allowed;
 }
 
+section {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
 body {
   font-family: "TT Norms Pro";
   background: var(--main-black);
@@ -176,6 +197,7 @@ main {
   line-height: 100%;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .link::after {

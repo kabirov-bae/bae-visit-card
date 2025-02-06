@@ -18,6 +18,7 @@ import { Container } from "@/shared/ui/Container";
 
 <style scoped>
 .intro {
+  height: 100vh;
 }
 
 .intro__inner {
@@ -25,7 +26,6 @@ import { Container } from "@/shared/ui/Container";
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  height: 100vh;
 }
 
 .intro__text {

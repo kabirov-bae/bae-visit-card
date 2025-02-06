@@ -27,7 +27,6 @@ import { Icons } from "@/shared/ui/Icons";
   gap: 2rem;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
 }
 
 .skill__icon {
