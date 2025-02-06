@@ -7,6 +7,7 @@ import { Container } from "@/shared/ui/Container";
   <section class="intro" id="intro">
     <Container>
       <div class="intro__inner">
+        <Avatar bold :bg="true" />
         <div class="intro__text">
           <Heading tag-name="h1" bold> Hello, I'm Bae!</Heading>
           <Heading tag-name="h2" bold> I'm Junior Web-Developer. </Heading>

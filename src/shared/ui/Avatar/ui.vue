@@ -21,9 +21,9 @@ const { scale = true, bg = false } = props;
 
 <style scoped>
 .avatar {
-  max-width: 10rem;
+  max-width: 14rem;
   border: 0.3rem solid var(--main-white);
-  border-radius: 50%;
+  border-radius: 20%;
   overflow: hidden;
   transition: 0.2s;
 }
