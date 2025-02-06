@@ -143,6 +143,17 @@ body {
   position: relative;
 }
 
+@media (max-width: 1200px) {
+  body {
+    font-size: 8px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 6px;
+  }
+}
+
 #app {
   display: flex;
   flex-direction: column;

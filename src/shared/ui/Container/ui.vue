@@ -8,20 +8,8 @@
 
 <style scoped>
 .container {
-  padding: 0 24px;
+  padding: 0 2.4rem;
   width: 100%;
   margin: 0 auto;
-}
-
-@media (max-width: 1400px) {
-  .container {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 900px) {
-  .container {
-    padding: 16px;
-  }
 }
 </style>

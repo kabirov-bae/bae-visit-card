@@ -24,13 +24,14 @@ import { Icons } from "@/shared/ui/Icons";
 <style>
 .skill__inner {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
+  padding: 0 2rem;
 }
 
 .skill__icon {
   aspect-ratio: 1;
-  width: 80px !important;
+  width: 8rem !important;
 }
 </style>
