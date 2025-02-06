@@ -8,18 +8,13 @@ const cv: string =
   "https://drive.google.com/file/d/17nQ7C9krw3P-dCUJOFxtWS4kqn9WMmPb/view?usp=sharing";
 
 const isLoaded = ref(false);
-onMounted(() => {
-  setTimeout(() => {
-    isLoaded.value = true;
-    console.log(isLoaded.value);
-  }, 4000);
-});
-
-console.log(isLoaded);
+setTimeout(() => {
+  isLoaded.value = true;
+}, 3000);
 </script>
 
 <template>
-  <header v-if="isLoaded" class="header" :class="{ 'fade-in': isLoaded }" id="header">
+  <header class="header" :class="isLoaded ? 'fade-in' : ''" id="header">
     <Container>
       <div class="header__inner">
         <div class="header__links">
@@ -29,10 +24,10 @@ console.log(isLoaded);
           <a class="link" target="_blank" :href="cv">cv</a>
         </div>
         <div class="header__socials">
-          <Icons type="github" />
-          <Icons type="vk" />
-          <Icons type="telegram" />
-          <Icons type="instagram" />
+          <Icons :custom-class="'header__icon'" type="github" />
+          <Icons :custom-class="'header__icon'" type="vk" />
+          <Icons :custom-class="'header__icon'" type="telegram" />
+          <Icons :custom-class="'header__icon'" type="instagram" />
         </div>
       </div>
     </Container>
@@ -46,10 +41,10 @@ console.log(isLoaded);
   left: 0;
   right: 0;
   opacity: 0;
-  transition: opacity 5s ease-in-out;
+  transition: opacity 0.5s;
 }
 
-.fade-in {
+.header.fade-in {
   opacity: 1;
 }
 .header * {
