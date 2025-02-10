@@ -27,6 +27,11 @@ import { Heading } from "@/shared/ui/Heading";
   gap: 1rem;
   border: 1px solid var(--main-white);
   border-radius: 1.3rem;
+  transition: 0.2s ease-out;
+}
+
+.portfolio-item:hover {
+  scale: 1.04;
 }
 
 .portfolio-item__image {
@@ -37,6 +42,19 @@ import { Heading } from "@/shared/ui/Heading";
   border-radius: 0.6rem;
   overflow: hidden;
   border: 1px solid var(--main-white);
+  filter: grayscale(1);
+  transition: 0.3s; 
+}
+
+.portfolio-item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.portfolio-item__image:hover {
+  filter: grayscale(0);
 }
 
 .portfolio-item__name {

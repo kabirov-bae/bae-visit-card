@@ -1,6 +1,6 @@
 import { type CardProps } from "./types";
 import picF from "@/shared/ui/Assets/Images/1.png";
-import picS from "@/shared/ui/Assets/Images/2.png";
+import picS from "@/shared/ui/Assets/Images/main.jpeg";
 import picT from "@/shared/ui/Assets/Images/3.png";
 
 export const Cards: CardProps[] = [
@@ -23,6 +23,6 @@ export const Cards: CardProps[] = [
     image: picT,
     descr:
       "lorem ipsum dolor sit amet, consectetur adip nonum soc tempor invidunt ut labore et dolore magna aliqu sapien et dolore magna aliqu sapien et dolore magna aliqu",
-    stack: ['php', 'Gulp.js'],
+    stack: ["php", "Gulp.js"],
   },
 ];
