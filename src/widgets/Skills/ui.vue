@@ -2,6 +2,9 @@
 import { Container } from "@/shared/ui/Container";
 import { Heading } from "@/shared/ui/Heading";
 import { Icons } from "@/shared/ui/Icons";
+import { ref } from "vue";
+
+const skillName = ref("");
 </script>
 
 <template>
@@ -16,6 +19,7 @@ import { Icons } from "@/shared/ui/Icons";
         <Icons :custom-class="'skill__icon'" type="gulp" />
         <Icons :custom-class="'skill__icon'" type="react" />
         <Icons :custom-class="'skill__icon'" type="wordpress" />
+        <span id="skill-name">{{ skillName }}</span>
       </div>
     </Container>
   </section>

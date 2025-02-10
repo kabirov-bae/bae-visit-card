@@ -201,7 +201,11 @@ const { telegram, instagram, vk, github } = links;
     </svg>
   </div>
 
-  <div :class="['icon', `icon-${type}`, customClass]" v-if="type === 'ts'">
+  <div
+    value="TypeScript"
+    :class="['icon', `icon-${type}`, customClass]"
+    v-if="type === 'ts'"
+  >
     <svg
       width="128"
       height="128"
@@ -216,7 +220,11 @@ const { telegram, instagram, vk, github } = links;
     </svg>
   </div>
 
-  <div :class="['icon', `icon-${type}`, customClass]" v-if="type === 'js'">
+  <div
+    value="JavaScript"
+    :class="['icon', `icon-${type}`, customClass]"
+    v-if="type === 'js'"
+  >
     <svg
       width="128"
       height="128"
@@ -231,7 +239,11 @@ const { telegram, instagram, vk, github } = links;
     </svg>
   </div>
 
-  <div :class="['icon', `icon-${type}`, customClass]" v-if="type === 'gulp'">
+  <div
+    value="Gulp"
+    :class="['icon', `icon-${type}`, customClass]"
+    v-if="type === 'gulp'"
+  >
     <svg
       width="128"
       height="128"
@@ -248,7 +260,11 @@ const { telegram, instagram, vk, github } = links;
     </svg>
   </div>
 
-  <div :class="['icon', `icon-${type}`, customClass]" v-if="type === 'webpack'">
+  <div
+    value="WebPack"
+    :class="['icon', `icon-${type}`, customClass]"
+    v-if="type === 'webpack'"
+  >
     <svg
       width="128"
       height="128"
@@ -263,7 +279,11 @@ const { telegram, instagram, vk, github } = links;
     </svg>
   </div>
 
-  <div :class="['icon', `icon-${type}`, customClass]" v-if="type === 'jquery'">
+  <div
+    value="Jquery"
+    :class="['icon', `icon-${type}`, customClass]"
+    v-if="type === 'jquery'"
+  >
     <svg
       width="128"
       height="128"
@@ -279,6 +299,7 @@ const { telegram, instagram, vk, github } = links;
   </div>
 
   <div
+    value="Wordpess"
     :class="['icon', `icon-${type}`, customClass]"
     v-if="type === 'wordpress'"
   >

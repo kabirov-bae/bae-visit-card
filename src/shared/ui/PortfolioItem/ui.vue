@@ -31,7 +31,6 @@ import { Heading } from "@/shared/ui/Heading";
 }
 
 .portfolio-item:hover {
-  scale: 1.04;
 }
 
 .portfolio-item__image {
