@@ -4,7 +4,20 @@ import { Heading } from "@/shared/ui/Heading";
 import { Icons } from "@/shared/ui/Icons";
 import { ref } from "vue";
 
-const skillName = ref("");
+let skillName = ref("");
+
+window.addEventListener("mouseup", (e) => {
+  const item = e.target.closest("div");
+  const x = item as HTMLElement;
+  console.log(x.clientLeft);
+
+  if (item && item.hasAttribute("value")) {
+    const v = item.getAttribute("value");
+    skillName.value = v;
+  } else {
+    skillName.value = "";
+  }
+});
 </script>
 
 <template>
@@ -19,7 +32,7 @@ const skillName = ref("");
         <Icons :custom-class="'skill__icon'" type="gulp" />
         <Icons :custom-class="'skill__icon'" type="react" />
         <Icons :custom-class="'skill__icon'" type="wordpress" />
-        <span id="skill-name">{{ skillName }}</span>
+        <span v-if="skillName.length" id="skill-name">{{ skillName }}</span>
       </div>
     </Container>
   </section>
@@ -36,5 +49,12 @@ const skillName = ref("");
 .skill__icon {
   aspect-ratio: 1;
   width: 8rem !important;
+  z-index: 2;
+}
+
+#skill-name {
+  position: absolute;
+  font-size: 2rem;
+  z-index: 1;
 }
 </style>

@@ -167,7 +167,11 @@ const { telegram, instagram, vk, github } = links;
     </svg>
   </a>
 
-  <div :class="['icon', `icon-${type}`, customClass]" v-if="type === 'vue'">
+  <div
+    value="Vue"
+    :class="['icon', `icon-${type}`, customClass]"
+    v-if="type === 'vue'"
+  >
     <svg
       width="128"
       height="128"
@@ -182,7 +186,11 @@ const { telegram, instagram, vk, github } = links;
     </svg>
   </div>
 
-  <div :class="['icon', `icon-${type}`, customClass]" v-if="type === 'react'">
+  <div
+    value="React"
+    :class="['icon', `icon-${type}`, customClass]"
+    v-if="type === 'react'"
+  >
     <svg
       width="128"
       height="128"
