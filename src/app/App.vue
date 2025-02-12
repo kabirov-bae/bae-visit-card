@@ -2,9 +2,9 @@
   <Header />
   <Content>
     <Intro class="with-divider" />
-    <Work class="with-divider" />
-    <Portfolio class="with-divider" />
     <Skill class="with-divider" />
+    <Portfolio class="with-divider" />
+    <Work class="with-divider" />
   </Content>
   <Footer />
 </template>
