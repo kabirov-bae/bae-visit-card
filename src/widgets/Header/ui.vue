@@ -34,13 +34,13 @@ const cv: string =
   position: fixed;
   left: 0;
   right: 0;
+  z-index: 99;
 }
 
 .header * {
   text-transform: lowercase;
 }
-.container {
-}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
